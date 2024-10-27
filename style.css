@@ -1,4 +1,66 @@
+:root {
+	--very-dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsl(333, 80%, 67%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100dvh;
+}
+
+main {
+	display: flex;
+}
+
+.stars-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.stars {
+	display: flex;
+	border-radius: 12px;
+	background-color: lightgray;
+	padding: 12px;
+}
+.reviews-container {
+	display: flex;
+	flex: 0.4;
+	gap: 24px;
+}
+
+.reviewer p {
+	color: var(--soft-pink);
+}
+
+.review1,
+.review2,
+.review3 {
+	color: #fff;
+	padding: 12px 18px;
+	/* width: 280px; */
+	border-radius: 12px;
+	background-color: var(--very-dark-magenta);
+}
+
+.stars-container {
+	display: flex;
+	border: 1px solid gray;
+	padding: 10px;
+	flex: 1;
+}
+
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
