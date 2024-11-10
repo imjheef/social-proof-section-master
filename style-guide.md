@@ -18,9 +18,9 @@ The designs were created to the following widths:
 
 ### Neutral
 
-Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
-White: hsl(0, 0%, 100%)
+--dark-grayish-magenta: hsl(303, 10%, 53%)
+--light-grayish-magenta: hsl(300, 24%, 96%)
+--white: hsl(0, 0%, 100%)
 
 ## Typography
 
