@@ -9,48 +9,48 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+}
+
+html {
+	background-image: url(./images/bg-pattern-top-desktop.svg),
+		url(./images/bg-pattern-bottom-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: top left, bottom right;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100dvh;
 	padding: 0 28px;
-	background-image: url(./images/bg-pattern-top-desktop.svg),
-		url(./images/bg-pattern-bottom-desktop.svg);
-	background-repeat: no-repeat;
-	background-position: top left, bottom right;
 	font-family: 'League Spartan', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+	height: 100vh;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 64px;
-	gap: 65px;
+	margin: 48px;
 }
 
 .main-description {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+	max-width: 460px;
 }
 
 .main-description h1 {
 	font-size: 4rem;
 	color: var(--very-dark-magenta);
-	width: 420px;
 }
 
 .main-description p {
 	color: var(--dark-grayish-magenta);
 	font-size: 1.2rem;
-	max-width: 450px;
 	line-height: 1.2;
 	font-weight: 500;
 }
@@ -58,6 +58,7 @@ main {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin: 38px 0;
 }
 
 .rating-container {
@@ -67,14 +68,14 @@ main {
 	gap: 22px;
 	padding: 12px;
 	font-weight: 700;
-	width: 500px;
+	width: 550px;
 }
 
 .stars-container {
 	display: flex;
 	gap: 34px;
 	width: 400px;
-	padding: 20px 24px;
+	padding: 26px 24px;
 	background-color: var(--light-grayish-magenta);
 	border-radius: 12px;
 	align-items: center;
@@ -102,8 +103,8 @@ main {
 .reviews-container {
 	display: flex;
 	justify-content: space-between;
-	gap: 40px;
-	height: 290px;
+	gap: 30px;
+	min-height: 230px;
 }
 
 .review {
@@ -111,12 +112,10 @@ main {
 	flex-direction: column;
 	gap: 24px;
 	color: #fff;
-	padding: 38px;
+	padding: 28px;
 	border-radius: 12px;
 	background-color: var(--very-dark-magenta);
 	line-height: 1.2;
-	height: auto;
-	max-height: 280px;
 }
 
 .reviewer {
@@ -149,50 +148,48 @@ main {
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */
 
 .attribution {
-	display: flex;
-	position: absolute;
-	bottom: 0;
-	align-self: center;
 	font-size: 15px;
 	text-align: center;
-	padding-bottom: 12px;
+	margin: 40px 0;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
 
-@media (width <= 1010px) {
-	*,
-	body,
-	html {
+/* * RESPONSIVE */
+
+@media (width <= 840px) {
+	* {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
-		justify-content: space-between;
 	}
 
 	body {
-		display: flex;
-		flex-flow: column;
+		height: 100%;
 	}
 
-	main {
-		display: flex;
-		flex-flow: column wrap;
+	.wrapper {
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+		margin-bottom: 100px;
 	}
 
 	.main-description {
+		justify-content: center;
 		text-align: center;
+		margin: 48px 0;
+		max-width: 430px;
 	}
 
 	.rating-container {
 		padding: 0;
+		flex-basis: 100%;
 	}
 
-	.wrapper,
 	.reviews-container {
-		justify-content: center;
-		flex-flow: wrap;
+		flex-wrap: wrap;
 		gap: 12px;
 	}
 
