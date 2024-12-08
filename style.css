@@ -169,11 +169,15 @@ main {
 		height: 100%;
 	}
 
+	main {
+		margin: 0;
+	}
+
 	.wrapper {
 		justify-content: center;
 		flex-wrap: wrap;
 		flex-basis: 100%;
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 
 	.main-description {
